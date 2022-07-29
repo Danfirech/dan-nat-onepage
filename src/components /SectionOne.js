@@ -47,6 +47,30 @@ const BottomRight = styled.div`
   align-items: center;
 `;
 
+const BoxContainer = styled.div`
+  height: 270px;
+  width: 290px;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const BoxTop = styled.div`
+  height: 25%;
+  width: 100%;
+`;
+
+const BoxMiddle = styled.div`
+  height: 25%;
+  width: 100%;
+`;
+
+const BoxBottom = styled.div`
+  height: 50%;
+  width: 100%;
+`;
+
 const SectionOne = () => {
   return (
     <>
@@ -54,9 +78,27 @@ const SectionOne = () => {
         <Header></Header>
         <TreeSection></TreeSection>
         <BottomContainer>
-          <BottomLeft>Test</BottomLeft>
-          <BottomMiddle>Test</BottomMiddle>
-          <BottomRight>Test</BottomRight>
+          <BottomLeft>
+            <BoxContainer>
+              <BoxTop>Test</BoxTop>
+              <BoxMiddle>Test</BoxMiddle>
+              <BoxBottom>Test</BoxBottom>
+            </BoxContainer>
+          </BottomLeft>
+          <BottomMiddle>
+            <BoxContainer>
+              <BoxTop>Test</BoxTop>
+              <BoxMiddle>Test</BoxMiddle>
+              <BoxBottom>Test</BoxBottom>
+            </BoxContainer>
+          </BottomMiddle>
+          <BottomRight>
+            <BoxContainer>
+              <BoxTop>Test</BoxTop>
+              <BoxMiddle>Test</BoxMiddle>
+              <BoxBottom>Test</BoxBottom>
+            </BoxContainer>
+          </BottomRight>
         </BottomContainer>
       </MainContainer>
     </>
