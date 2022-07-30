@@ -27,12 +27,6 @@ const Right = styled.div`
   align-items: center;
 `;
 
-const TreeSection = styled.div`
-  height: 400px;
-  width: 100vw;
-  background-color: red;
-`;
-
 const header = () => {
   return (
     <div>
