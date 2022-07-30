@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import hero1 from "../images/hero-1.jpg";
+import hero2 from "../images/hero-2.jpg";
+import hero3 from "../images/hero-3.jpg";
+import hero7 from "../images/hero-7.jpg";
+import hero8 from "../images/hero-8.jpg";
 
 const MainContainer = styled.div`
   height: 80vh;
@@ -23,19 +28,42 @@ const LeftOne = styled.div`
 const TopLeftOne = styled.div`
   height: 33.3%;
   width: 100%;
-  background-color: blue;
+  background-color: white;
+  display: flex;
+
+  .pic1 {
+    height: 99%;
+    width: 48%;
+  }
+
+  .pic2 {
+    height: 99%;
+    width: 50%;
+    padding-left: 1%;
+  }
 `;
 
 const MiddleLeftOne = styled.div`
   height: 33.3%;
   width: 100%;
-  background-color: yellow;
+  background-color: white;
+  display: flex;
+
+  .pic2 {
+    height: 99%;
+    width: 99%;
+  }
 `;
 
 const BottomLeftOne = styled.div`
   height: 33.3%;
   width: 100%;
-  background-color: green;
+  background-color: white;
+
+  .pic3 {
+    height: 99%;
+    width: 99%;
+  }
 `;
 
 // LEFT PIC BOX TWO //
@@ -127,9 +155,16 @@ const SectionTwo = () => {
     <>
       <MainContainer>
         <LeftOne>
-          <TopLeftOne></TopLeftOne>
-          <MiddleLeftOne></MiddleLeftOne>
-          <BottomLeftOne></BottomLeftOne>
+          <TopLeftOne>
+            <img className="pic1" src={hero1} alt="sticky note" />
+            <img className="pic2" src={hero3} alt="sticky note" />
+          </TopLeftOne>
+          <MiddleLeftOne>
+            <img className="pic2" src={hero8} alt="sticky note" />
+          </MiddleLeftOne>
+          <BottomLeftOne>
+            <img className="pic3" src={hero7} alt="sticky note" />
+          </BottomLeftOne>
         </LeftOne>
         <LeftTwo>
           <TopLeftTwo></TopLeftTwo>
