@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
-import HeroPic from '../images/hero-6.jpg';
+import HeroPic from '../images/hero-1.jpg';
 
 const MainContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  /* background-color: pink; */
   display: flex;
   flex-direction: column;
 `;
@@ -14,8 +13,10 @@ const MainContainer = styled.div`
 const TreeSection = styled.div`
   height: 500px;
   width: 100vw;
-  background-size: contain;
-  background: ${(props) => `url(${props.imgUrl})`};
+  .hero-img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const BottomContainer = styled.div`
@@ -78,7 +79,9 @@ const SectionOne = () => {
     <>
       <MainContainer>
         <Header></Header>
-        <TreeSection imgUrl="../images/hero-6.jpg"></TreeSection>
+        <TreeSection>
+          <img src={HeroPic} alt="main-pic" className="hero-img" />
+        </TreeSection>
         <BottomContainer>
           <BottomLeft>
             <BoxContainer>
