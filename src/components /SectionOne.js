@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
-import HeroPic from '../images/hero-1.jpg';
+import HeroPic from '../images/hero-6.jpg';
 
 const MainContainer = styled.div`
   height: 100vh;
@@ -15,7 +15,17 @@ const TreeSection = styled.div`
   width: 100vw;
   .hero-img {
     width: 100%;
-    height: 100%;
+    height: 460px;
+    /* width: 100%;
+    height: 95%; */
+    /* position: absolute; */
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 20px;
+    color: black;
+    z-index: 99;
   }
 `;
 
@@ -80,6 +90,9 @@ const SectionOne = () => {
       <MainContainer>
         <Header></Header>
         <TreeSection>
+          <div className="title">
+            Create and grow your website fast with Dan and Nat Designs.
+          </div>
           <img src={HeroPic} alt="main-pic" className="hero-img" />
         </TreeSection>
         <BottomContainer>
