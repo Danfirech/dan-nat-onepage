@@ -20,6 +20,17 @@ const MainContainer = styled.div`
   align-items: center;
 `;
 
+const Title = styled.div`
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  margin-top: 30px;
+  margin-bottom: -20px;
+`;
+
 // LEFT PIC BOX ONE //
 
 const LeftOne = styled.div`
@@ -183,24 +194,49 @@ const RightTwo = styled.div`
 const TopRightTwo = styled.div`
   height: 33.3%;
   width: 100%;
-  background-color: blue;
+  background-color: white;
+  display: flex;
+
+  .pic1 {
+    height: 99%;
+    width: 48%;
+  }
+
+  .pic2 {
+    height: 99%;
+    width: 50%;
+    padding-left: 1%;
+  }
 `;
 
 const MiddleRightTwo = styled.div`
   height: 33.3%;
   width: 100%;
-  background-color: yellow;
+  background-color: white;
+
+  .pic3 {
+    height: 99%;
+    width: 99%;
+  }
 `;
 
 const BottomRightTwo = styled.div`
   height: 33.3%;
   width: 100%;
-  background-color: green;
+  background-color: white;
+
+  .pic3 {
+    height: 99%;
+    width: 99%;
+  }
 `;
 
 const SectionTwo = () => {
   return (
     <>
+      <Title>
+        <div>Our Daily Inspo</div>
+      </Title>
       <MainContainer>
         <LeftOne>
           <TopLeftOne>
@@ -238,9 +274,16 @@ const SectionTwo = () => {
           </BottomRightOne>
         </RightOne>
         <RightTwo>
-          <TopRightTwo></TopRightTwo>
-          <MiddleRightTwo></MiddleRightTwo>
-          <BottomRightTwo></BottomRightTwo>
+          <TopRightTwo>
+            <img className="pic1" src={hero1} alt="sticky note" />
+            <img className="pic2" src={hero3} alt="sticky note" />
+          </TopRightTwo>
+          <MiddleRightTwo>
+            <img className="pic3" src={hero8} alt="sticky note" />
+          </MiddleRightTwo>
+          <BottomRightTwo>
+            <img className="pic3" src={hero7} alt="sticky note" />
+          </BottomRightTwo>
         </RightTwo>
       </MainContainer>
     </>

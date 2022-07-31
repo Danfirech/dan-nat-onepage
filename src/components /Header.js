@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Logo from '../images/logo.png';
 
 const Container = styled.div`
   height: 140px;
@@ -16,6 +17,11 @@ const Left = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .logo-img {
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 const Right = styled.div`
@@ -32,7 +38,7 @@ const header = () => {
     <div>
       <Container>
         <Left>
-          <div>LOGO</div>
+          <img src={Logo} alt="logo" className="logo-img" />
         </Left>
         <Right>
           <div>Thing</div>
