@@ -10,22 +10,27 @@ const MainContainer = styled.div`
   flex-direction: column;
 `;
 
+// const TopContainer = styled.div``;
+
 const TreeSection = styled.div`
   height: 500px;
   width: 100vw;
   .hero-img {
     width: 100%;
     height: 460px;
-    /* width: 100%;
-    height: 95%; */
-    /* position: absolute; */
+    position: absolute;
     object-fit: cover;
+    z-index: -1;
   }
 
   .title {
-    font-size: 20px;
+    font-size: 45px;
     color: black;
-    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-left: 500px;
   }
 `;
 
@@ -90,11 +95,13 @@ const SectionOne = () => {
       <MainContainer>
         <Header></Header>
         <TreeSection>
-          <div className="title">
-            Create and grow your website fast with Dan and Nat Designs.
-          </div>
           <img src={HeroPic} alt="main-pic" className="hero-img" />
+          <div className="title">
+            Create and grow your website fast <br />
+            with Dan and Nat Designs.
+          </div>
         </TreeSection>
+
         <BottomContainer>
           <BottomLeft>
             <BoxContainer>
