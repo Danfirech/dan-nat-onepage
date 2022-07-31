@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const MainContainer = styled.div`
-  height: 60vh;
+  height: 40vh;
   width: 100vw;
   background-color: white;
   display: flex;
@@ -22,10 +22,11 @@ const Top = styled.div`
 const Bottom = styled.div`
   height: 30%;
   width: 70vw;
-  background-color: grey;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: solid black 2px;
 `;
 
 const SectionThree = () => {
