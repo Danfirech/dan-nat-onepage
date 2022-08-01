@@ -26,9 +26,9 @@ const Title = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
   margin-top: 30px;
-  margin-bottom: -20px;
+  margin-bottom: -60px;
+  font-size: 60px;
 `;
 
 // LEFT PIC BOX ONE //

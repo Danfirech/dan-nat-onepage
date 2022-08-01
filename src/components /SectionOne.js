@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Header from './Header';
-import HeroPic from '../images/hero-6.jpg';
+import React from "react";
+import styled from "styled-components";
+import Header from "./Header";
+import HeroPic from "../images/hero-6.jpg";
 
 const MainContainer = styled.div`
   height: 100vh;
@@ -68,7 +68,7 @@ const BottomRight = styled.div`
 const BoxContainer = styled.div`
   height: 270px;
   width: 290px;
-  background-color: purple;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,16 +77,25 @@ const BoxContainer = styled.div`
 const BoxTop = styled.div`
   height: 25%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BoxMiddle = styled.div`
   height: 25%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BoxBottom = styled.div`
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SectionOne = () => {
@@ -105,23 +114,35 @@ const SectionOne = () => {
         <BottomContainer>
           <BottomLeft>
             <BoxContainer>
-              <BoxTop>Test</BoxTop>
-              <BoxMiddle>Test</BoxMiddle>
-              <BoxBottom>Test</BoxBottom>
+              <BoxTop></BoxTop>
+              <BoxMiddle>Fixed priced Landing Pages</BoxMiddle>
+              <BoxBottom>
+                Lorem ipsum is placeholder text commonly used in the graphic,
+                print, and publishing industries for previewing layouts and
+                visual mockups.
+              </BoxBottom>
             </BoxContainer>
           </BottomLeft>
           <BottomMiddle>
             <BoxContainer>
               <BoxTop>Test</BoxTop>
-              <BoxMiddle>Test</BoxMiddle>
-              <BoxBottom>Test</BoxBottom>
+              <BoxMiddle>Receive on Time</BoxMiddle>
+              <BoxBottom>
+                Lorem ipsum is placeholder text commonly used in the graphic,
+                print, and publishing industries for previewing layouts and
+                visual mockups.
+              </BoxBottom>
             </BoxContainer>
           </BottomMiddle>
           <BottomRight>
             <BoxContainer>
               <BoxTop>Test</BoxTop>
-              <BoxMiddle>Test</BoxMiddle>
-              <BoxBottom>Test</BoxBottom>
+              <BoxMiddle>100% Satisfaction</BoxMiddle>
+              <BoxBottom>
+                Lorem ipsum is placeholder text commonly used in the graphic,
+                print, and publishing industries for previewing layouts and
+                visual mockups.
+              </BoxBottom>
             </BoxContainer>
           </BottomRight>
         </BottomContainer>
