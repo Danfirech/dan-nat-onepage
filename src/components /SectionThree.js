@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../images/logo.png";
 
 const MainContainer = styled.div`
   height: 40vh;
@@ -34,9 +35,9 @@ const SectionThree = () => {
     <>
       <MainContainer>
         <Top>
-          <div>Logo</div>
+          <img src={Logo} alt="logo" className="logo-img" />
           <div>Links</div>
-          <div>Email Us</div>
+          <div>Email Us: DanandNat@danandnatdesign.com</div>
         </Top>
         <Bottom>
           <div>2022 Dan&Nat Design</div>
