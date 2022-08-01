@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Header from './Header';
-import HeroPic from '../images/hero-6.jpg';
+import React from "react";
+import styled from "styled-components";
+import Header from "./Header";
+import HeroPic from "../images/hero-6.jpg";
 
 const MainContainer = styled.div`
   height: 100vh;
@@ -77,16 +77,25 @@ const BoxContainer = styled.div`
 const BoxTop = styled.div`
   height: 25%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BoxMiddle = styled.div`
   height: 25%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BoxBottom = styled.div`
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SectionOne = () => {
