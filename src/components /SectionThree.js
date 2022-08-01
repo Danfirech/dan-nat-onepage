@@ -16,8 +16,32 @@ const Top = styled.div`
   width: 70vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
+`;
+
+const TopLeft = styled.div`
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const TopMiddle = styled.div`
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const TopRight = styled.div`
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Bottom = styled.div`
@@ -35,9 +59,16 @@ const SectionThree = () => {
     <>
       <MainContainer>
         <Top>
-          <img src={Logo} alt="logo" className="logo-img" />
-          <div>Links</div>
-          <div>Email Us: DanandNat@danandnatdesign.com</div>
+          <TopLeft>
+            <img src={Logo} alt="logo" className="logo-img" />
+          </TopLeft>
+          <TopMiddle>
+            <div>Links</div>
+          </TopMiddle>
+          <TopRight>
+            <div>Email Us:</div>
+            <div>DanandNat@danandnatdesign.com</div>
+          </TopRight>
         </Top>
         <Bottom>
           <div>2022 Dan&Nat Design</div>
