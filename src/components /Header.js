@@ -33,7 +33,7 @@ const Right = styled.div`
   align-items: center;
 `;
 
-const header = () => {
+const Header = () => {
   return (
     <div>
       <Container>
@@ -41,14 +41,12 @@ const header = () => {
           <img src={Logo} alt="logo" className="logo-img" />
         </Left>
         <Right>
-          <div>Thing</div>
-          <div>Thing</div>
-          <div>Thing</div>
-          <div>Thing</div>
+          <div>About</div>
+          <div>Contact</div>
         </Right>
       </Container>
     </div>
   );
 };
 
-export default header;
+export default Header;
