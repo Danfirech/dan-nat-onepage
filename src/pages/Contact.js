@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import Header from "../components /Header";
+import JotformEmbed from "react-jotform-embed";
 
 const Container = styled.div`
   height: 100vh;
@@ -22,6 +23,10 @@ const Top = styled.div`
   align-items: center;
   background-color: pink;
   margin-top: -10%;
+
+  .font {
+    font-size: 28px;
+  }
 `;
 
 const Bottom = styled.div`
@@ -33,6 +38,11 @@ const Bottom = styled.div`
   justify-content: center;
   align-items: center;
   background-color: blue;
+
+  .form {
+    height: 80px;
+    width: 60px;
+  }
 `;
 
 const Contact = () => {
@@ -41,13 +51,15 @@ const Contact = () => {
       <Header></Header>
       <Container>
         <Top>
-          <div>Contact Dan and Nat</div>
+          <div className="font">Contact Dan and Nat</div>
           <div>
             We’re here to help and answer any question you might have. We look
             forward to hearing from you 🙂
           </div>
         </Top>
-        <Bottom></Bottom>
+        <Bottom>
+          <JotformEmbed src="https://form.jotform.com/220784862221152" />
+        </Bottom>
       </Container>
     </div>
   );

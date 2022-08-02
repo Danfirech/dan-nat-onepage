@@ -72,7 +72,7 @@ const SectionThree = () => {
             <img src={Logo} alt="logo" className="logo-img" />
           </TopLeft>
           <TopMiddle>
-            <a href="https://www.w3schools.com">Dans GitHUB</a>
+            <a href="https://www.w3schools.com">Dans</a>
             <a href="https://www.w3schools.com">Nats GitHUB</a>
             <a href="https://www.w3schools.com">Fiver Link</a>
           </TopMiddle>
