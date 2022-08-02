@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Time from '../images/on-time.png';
+import Price from '../images/price.png';
+import Satisfaction from '../images/satisfaction.png';
 
 const MainContainer = styled.div`
   height: 100vh;
@@ -9,10 +11,8 @@ const MainContainer = styled.div`
   flex-direction: column;
 `;
 
-// const TopContainer = styled.div``;
-
 const TreeSection = styled.div`
-  height: 500px;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -91,9 +91,14 @@ const BoxTop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
 `;
 
-const IconCircle = styled.div`
+const IconSquare = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +111,8 @@ const IconCircle = styled.div`
 const BoxMiddle = styled.div`
   height: 25%;
   width: 100%;
+  font-size: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +121,7 @@ const BoxMiddle = styled.div`
 const BoxBottom = styled.div`
   height: 50%;
   width: 100%;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,17 +132,19 @@ const SectionOne = () => {
     <>
       <MainContainer>
         <TreeSection>
-          <div className="title">
+          <div className="title slide-in-top">
             Create and grow your website fast <br />
             with Dan and Nat Design.
           </div>
-          <button className="contact-btn">Contact Us</button>
+          <button className="contact-btn slide-in-top pulsate-bck">
+            Contact Us
+          </button>
         </TreeSection>
         <BottomContainer>
           <BottomLeft>
             <BoxContainer>
               <BoxTop>
-                <image src={Time} alt="time" className="icon" />
+                <image src={Price} alt="time" className="icon" />
               </BoxTop>
               <BoxMiddle>Fixed priced landing pages</BoxMiddle>
               <BoxBottom>
@@ -146,7 +156,9 @@ const SectionOne = () => {
           </BottomLeft>
           <BottomMiddle>
             <BoxContainer>
-              <BoxTop>Test</BoxTop>
+              <BoxTop>
+                <image src={Time} alt="time" className="icon" />
+              </BoxTop>
               <BoxMiddle>Receive on time</BoxMiddle>
               <BoxBottom>
                 Lorem ipsum is placeholder text commonly used in the graphic,
@@ -157,7 +169,9 @@ const SectionOne = () => {
           </BottomMiddle>
           <BottomRight>
             <BoxContainer>
-              <BoxTop>Test</BoxTop>
+              <BoxTop>
+                <image src={Satisfaction} alt="time" className="icon" />
+              </BoxTop>
               <BoxMiddle>100% Satisfaction</BoxMiddle>
               <BoxBottom>
                 Lorem ipsum is placeholder text commonly used in the graphic,
