@@ -31,8 +31,9 @@ const TopLeft = styled.div`
 const TopMiddle = styled.div`
   height: 100%;
   width: 33.3%;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
 
@@ -71,7 +72,9 @@ const SectionThree = () => {
             <img src={Logo} alt="logo" className="logo-img" />
           </TopLeft>
           <TopMiddle>
-            <div>Links</div>
+            <a href="https://www.w3schools.com">Dans GitHUB</a>
+            <a href="https://www.w3schools.com">Nats GitHUB</a>
+            <a href="https://www.w3schools.com">Fiver Link</a>
           </TopMiddle>
           <TopRight>
             <div>Email Us:</div>
@@ -83,7 +86,9 @@ const SectionThree = () => {
           <Link to="/privecypolicy" style={{ textDecoration: "none" }}>
             <div className="privecypolicy-btn">Privecy Policy</div>
           </Link>
-          <div>Terms and Conditions</div>
+          <Link to="/termsAndConditions" style={{ textDecoration: "none" }}>
+            <div className="privecypolicy-btn">Terms and Conditions</div>
+          </Link>
         </Bottom>
       </MainContainer>
     </>
