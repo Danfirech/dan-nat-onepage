@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Logo from '../images/logo.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 140px;
@@ -26,7 +26,7 @@ const Left = styled.div`
 
 const Right = styled.div`
   height: 100%;
-  width: 40%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,10 +56,10 @@ const Header = () => {
           <img src={Logo} alt="logo" className="logo-img" />
         </Left>
         <Right>
-          <Link to="/about" style={{ textDecoration: 'none' }}>
+          <Link to="/about" style={{ textDecoration: "none" }}>
             <div className="about-btn">About</div>
           </Link>
-          <Link to="/contact" style={{ textDecoration: 'none' }}>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
             <div className="contact-btn">Contact</div>
           </Link>
         </Right>

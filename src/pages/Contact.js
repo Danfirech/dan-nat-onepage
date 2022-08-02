@@ -1,7 +1,68 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../images/logo.png";
+import { Link } from "react-router-dom";
+import Header from "../components /Header";
+import JotformEmbed from "react-jotform-embed";
+
+const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Top = styled.div`
+  height: 20vh;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  margin-top: -10%;
+
+  .font {
+    font-size: 28px;
+  }
+`;
+
+const Bottom = styled.div`
+  height: 40vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+
+  .form {
+    height: 80px;
+    width: 60px;
+  }
+`;
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <Header></Header>
+      <Container>
+        <Top>
+          <div className="font">Contact Dan and Nat</div>
+          <div>
+            We’re here to help and answer any question you might have. We look
+            forward to hearing from you 🙂
+          </div>
+        </Top>
+        <Bottom>
+          <JotformEmbed src="https://form.jotform.com/220784862221152" />
+        </Bottom>
+      </Container>
+    </div>
+  );
 };
 
 export default Contact;
