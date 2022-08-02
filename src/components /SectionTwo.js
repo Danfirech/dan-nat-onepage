@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import hero1 from "../images/hero-1.jpg";
-import hero2 from "../images/hero-2.jpg";
-import hero3 from "../images/hero-3.jpg";
-import hero4 from "../images/hero-4.jpg";
-import hero5 from "../images/hero-5.jpg";
-import hero6 from "../images/hero-6.jpg";
-import hero7 from "../images/hero-7.jpg";
-import hero8 from "../images/hero-8.jpg";
-import hero9 from "../images/hero-9.jpg";
-import hero10 from "../images/hero-10.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import hero1 from '../images/hero-1.jpg';
+import hero2 from '../images/hero-2.jpg';
+import hero3 from '../images/hero-3.jpg';
+import hero4 from '../images/hero-4.jpg';
+import hero5 from '../images/hero-5.jpg';
+import hero6 from '../images/hero-6.jpg';
+import hero7 from '../images/hero-7.jpg';
+import hero8 from '../images/hero-8.jpg';
+import hero9 from '../images/hero-9.jpg';
+import hero10 from '../images/hero-10.jpg';
 
 const MainContainer = styled.div`
   height: 80vh;
@@ -28,7 +28,7 @@ const Title = styled.div`
   align-items: center;
   margin-top: 30px;
   margin-bottom: -60px;
-  font-size: 60px;
+  font-size: 45px;
 `;
 
 // LEFT PIC BOX ONE //
@@ -234,9 +234,7 @@ const BottomRightTwo = styled.div`
 const SectionTwo = () => {
   return (
     <>
-      <Title>
-        <div>Our Daily Inspo</div>
-      </Title>
+      <Title>Our Daily Inspo</Title>
       <MainContainer>
         <LeftOne>
           <TopLeftOne>

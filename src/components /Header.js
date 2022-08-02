@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../images/logo.png';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   height: 140px;
@@ -17,8 +18,8 @@ const Left = styled.div`
   align-items: center;
 
   .logo-img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     cursor: pointer;
   }
 `;
@@ -33,11 +34,13 @@ const Right = styled.div`
   font-size: 18px;
 
   .about-btn {
+    color: black;
     :hover {
       font-weight: bold;
     }
   }
   .contact-btn {
+    color: black;
     padding-right: 30%;
     :hover {
       font-weight: bold;
@@ -53,8 +56,12 @@ const Header = () => {
           <img src={Logo} alt="logo" className="logo-img" />
         </Left>
         <Right>
-          <div className="about-btn">About</div>
-          <div className="contact-btn">Contact</div>
+          <Link to="/about" style={{ textDecoration: 'none' }}>
+            <div className="about-btn">About</div>
+          </Link>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <div className="contact-btn">Contact</div>
+          </Link>
         </Right>
       </Container>
     </div>
