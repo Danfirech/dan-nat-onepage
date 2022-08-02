@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const MainContainer = styled.div`
   height: 40vh;
@@ -52,6 +53,13 @@ const Bottom = styled.div`
   align-items: center;
   justify-content: space-between;
   border-top: solid black 2px;
+
+  .privecypolicy-btn {
+    color: black;
+    :hover {
+      font-weight: bold;
+    }
+  }
 `;
 
 const SectionThree = () => {
@@ -72,7 +80,9 @@ const SectionThree = () => {
         </Top>
         <Bottom>
           <div>2022 Dan&Nat Design</div>
-          <div>Privacy Policy</div>
+          <Link to="/privecypolicy" style={{ textDecoration: "none" }}>
+            <div className="privecypolicy-btn">Privecy Policy</div>
+          </Link>
           <div>Terms and Conditions</div>
         </Bottom>
       </MainContainer>
