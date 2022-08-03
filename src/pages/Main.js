@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionOne from '../components /SectionOne';
-import SectionThree from '../components /SectionThree';
+import Footer from '../components /Footer';
 import SectionTwo from '../components /SectionTwo';
 import Header from '../components /Header';
 import HeroPic from '../images/hero-6.jpg';
@@ -25,7 +25,7 @@ const Main = () => {
         <SectionOne />
       </TopContainer>
       <SectionTwo />
-      <SectionThree />
+      <Footer />
     </div>
   );
 };

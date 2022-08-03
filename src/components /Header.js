@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Logo from "../images/logo.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import Logo from '../images/logo.png';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   height: 140px;
@@ -53,13 +53,15 @@ const Header = () => {
     <div>
       <Container>
         <Left>
-          <img src={Logo} alt="logo" className="logo-img" />
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <img src={Logo} alt="logo" className="logo-img" />
+          </Link>
         </Left>
         <Right>
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link to="/about" style={{ textDecoration: 'none' }}>
             <div className="about-btn">About</div>
           </Link>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
             <div className="contact-btn">Contact</div>
           </Link>
         </Right>
