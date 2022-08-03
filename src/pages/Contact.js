@@ -4,6 +4,7 @@ import Logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import Header from "../components /Header";
 import JotformEmbed from "react-jotform-embed";
+import Footer from "../components /Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -56,6 +57,7 @@ const Contact = () => {
           <JotformEmbed src="https://form.jotform.com/222144101705137" />
         </Bottom>
       </Container>
+      <Footer></Footer>
     </div>
   );
 };

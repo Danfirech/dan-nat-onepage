@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Logo from '../images/logo.png';
-import Header from '../components /Header';
-import Woman from '../images/woman.png';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../images/logo.png";
+import Header from "../components /Header";
+import Woman from "../images/woman.png";
+import Footer from "../components /Footer";
 
 const Container = styled.div`
   height: 89vh;
@@ -194,6 +195,7 @@ const About = () => {
           </BottomRight>
         </Bottom>
       </Container>
+      <Footer></Footer>
     </div>
   );
 };
