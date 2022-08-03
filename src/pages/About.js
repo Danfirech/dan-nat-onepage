@@ -72,7 +72,8 @@ const MiddleLeft = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
 `;
 
 const MiddleMiddle = styled.div`
@@ -93,7 +94,8 @@ const MiddleRight = styled.div`
   justify-content: center;
   background-color: #565552;
   color: white;
-  font-size: 25px;
+  font-size: 45px;
+  font-weight: bold;
 `;
 
 // BOTTOM BOTTOM BOTTOM
@@ -157,6 +159,7 @@ const MainText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 `;
 
 const About = () => {
@@ -191,11 +194,9 @@ const About = () => {
           </MiddleLeft>
           <MiddleMiddle>
             <MainText>
-              <div>
-                is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,
-              </div>
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s,
             </MainText>
           </MiddleMiddle>
           <MiddleRight>
