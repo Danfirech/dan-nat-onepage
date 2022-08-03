@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Time from '../images/on-time.png';
 import Price from '../images/price.png';
 import Satisfaction from '../images/satisfaction.png';
@@ -136,9 +137,11 @@ const SectionOne = () => {
             Create and grow your website fast <br />
             with Dan and Nat Design.
           </div>
-          <button className="contact-btn slide-in-top pulsate-bck">
-            Contact Us
-          </button>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <button className="contact-btn slide-in-top pulsate-bck">
+              Contact Us
+            </button>
+          </Link>
         </TreeSection>
         <BottomContainer>
           <BottomLeft>
