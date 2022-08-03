@@ -1,7 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Header from "./Header";
-import HeroPic from "../images/hero-6.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Time from '../images/on-time.png';
+import Price from '../images/price.png';
+import Satisfaction from '../images/satisfaction.png';
 
 const MainContainer = styled.div`
   height: 100vh;
@@ -10,27 +12,37 @@ const MainContainer = styled.div`
   flex-direction: column;
 `;
 
-// const TopContainer = styled.div``;
-
 const TreeSection = styled.div`
-  height: 500px;
+  height: 100%;
   width: 100vw;
-  .hero-img {
-    width: 100%;
-    height: 460px;
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .title {
-    font-size: 45px;
+    font-size: 50px;
     color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 150px;
     padding-left: 500px;
+    text-align: center;
+  }
+
+  .contact-btn {
+    font-size: 25px;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #d5d7db;
+    /* border: 0.5px solid black; */
+    border: none;
+    cursor: pointer;
+    :hover {
+      background-color: #f0eff4;
+    }
   }
 `;
 
@@ -80,11 +92,28 @@ const BoxTop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+`;
+
+const IconSquare = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 130px;
+  background-color: purple;
+  border-radius: 65px;
 `;
 
 const BoxMiddle = styled.div`
   height: 25%;
   width: 100%;
+  font-size: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +122,7 @@ const BoxMiddle = styled.div`
 const BoxBottom = styled.div`
   height: 50%;
   width: 100%;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,20 +132,24 @@ const SectionOne = () => {
   return (
     <>
       <MainContainer>
-        <Header></Header>
         <TreeSection>
-          <img src={HeroPic} alt="main-pic" className="hero-img" />
-          <div className="title">
+          <div className="title slide-in-top">
             Create and grow your website fast <br />
-            with Dan and Nat Designs.
+            with Dan and Nat Design.
           </div>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <button className="contact-btn slide-in-top pulsate-bck">
+              Contact Us
+            </button>
+          </Link>
         </TreeSection>
-
         <BottomContainer>
           <BottomLeft>
             <BoxContainer>
-              <BoxTop></BoxTop>
-              <BoxMiddle>Fixed priced Landing Pages</BoxMiddle>
+              <BoxTop>
+                <image src={Price} alt="time" className="icon" />
+              </BoxTop>
+              <BoxMiddle>Fixed priced landing pages</BoxMiddle>
               <BoxBottom>
                 Lorem ipsum is placeholder text commonly used in the graphic,
                 print, and publishing industries for previewing layouts and
@@ -125,8 +159,10 @@ const SectionOne = () => {
           </BottomLeft>
           <BottomMiddle>
             <BoxContainer>
-              <BoxTop>Test</BoxTop>
-              <BoxMiddle>Receive on Time</BoxMiddle>
+              <BoxTop>
+                <image src={Time} alt="time" className="icon" />
+              </BoxTop>
+              <BoxMiddle>Receive on time</BoxMiddle>
               <BoxBottom>
                 Lorem ipsum is placeholder text commonly used in the graphic,
                 print, and publishing industries for previewing layouts and
@@ -136,7 +172,9 @@ const SectionOne = () => {
           </BottomMiddle>
           <BottomRight>
             <BoxContainer>
-              <BoxTop>Test</BoxTop>
+              <BoxTop>
+                <image src={Satisfaction} alt="time" className="icon" />
+              </BoxTop>
               <BoxMiddle>100% Satisfaction</BoxMiddle>
               <BoxBottom>
                 Lorem ipsum is placeholder text commonly used in the graphic,
