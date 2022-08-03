@@ -1,10 +1,10 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import PrivecyPolicy from "./pages/PrivecyPolicy";
-import TermsAndConditions from "./pages/TermsAndConditions";
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './pages/Main';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/privecypolicy" element={<PrivecyPolicy />} />
-        <Route path="/termsAndConditions" element={<TermsAndConditions />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/termsandconditions" element={<TermsAndConditions />} />
       </Routes>
     </BrowserRouter>
   );

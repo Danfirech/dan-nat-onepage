@@ -1,15 +1,28 @@
-import React from "react";
-import styled from "styled-components";
-import hero1 from "../images/hero-1.jpg";
-import hero2 from "../images/hero-2.jpg";
-import hero3 from "../images/hero-3.jpg";
-import hero4 from "../images/hero-4.jpg";
-import hero5 from "../images/hero-5.jpg";
-import hero6 from "../images/hero-6.jpg";
-import hero7 from "../images/hero-7.jpg";
-import hero8 from "../images/hero-8.jpg";
-import hero9 from "../images/hero-9.jpg";
-import hero10 from "../images/hero-10.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import Chip from '../images/chip.jpg';
+import Coffee from '../images/coffee.jpg';
+import Coffee2 from '../images/coffee2.jpg';
+import Coldbrew from '../images/coldbrew.jpg';
+import Dinner from '../images/dinner.jpg';
+import Dinner2 from '../images/dinner2.jpg';
+import Drums from '../images/drums.jpg';
+import Flower from '../images/flower.jpg';
+import Gummy from '../images/gummy.jpg';
+import Orange from '../images/orange.jpg';
+import Orange2 from '../images/orange2.jpg';
+import Orange3 from '../images/orange3.jpg';
+import Palm from '../images/palm.jpg';
+import Pink from '../images/pink.jpg';
+import Pink2 from '../images/pink2.jpg';
+import Plant2 from '../images/plant2.jpg';
+import Rainbow from '../images/rainbow.jpg';
+import Room from '../images/room.jpg';
+import Sculpture from '../images/sculpture.jpg';
+import Surf from '../images/surf.jpg';
+import Surf2 from '../images/surf2.jpg';
+import Surfboards from '../images/surfboards.jpg';
+import Swamp from '../images/swamp.jpg';
 
 const MainContainer = styled.div`
   height: 80vh;
@@ -18,6 +31,9 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>🐁</text></svg>")
+      16 0,
+    auto;
 `;
 
 const Title = styled.div`
@@ -50,12 +66,20 @@ const TopLeftOne = styled.div`
   .pic1 {
     height: 99%;
     width: 48%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 
   .pic2 {
     height: 99%;
     width: 50%;
     padding-left: 1%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -68,6 +92,10 @@ const MiddleLeftOne = styled.div`
   .pic2 {
     height: 99%;
     width: 99%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -79,6 +107,10 @@ const BottomLeftOne = styled.div`
   .pic3 {
     height: 99%;
     width: 99%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -100,6 +132,10 @@ const TopLeftTwo = styled.div`
   .pic1 {
     height: 99%;
     width: 99%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -111,12 +147,20 @@ const MiddleLeftTwo = styled.div`
   .pic1 {
     height: 99%;
     width: 48%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 
   .pic2 {
     height: 99%;
     width: 50%;
     padding-left: 1%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -128,12 +172,20 @@ const BottomLeftTwo = styled.div`
   .pic1 {
     height: 99%;
     width: 48%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 
   .pic2 {
     height: 99%;
     width: 50%;
     padding-left: 1%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -155,12 +207,20 @@ const TopRightOne = styled.div`
   .pic1 {
     height: 99%;
     width: 48%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 
   .pic2 {
     height: 99%;
     width: 50%;
     padding-left: 1%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -178,6 +238,10 @@ const BottomRightOne = styled.div`
   .pic1 {
     height: 100%;
     width: 99%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -200,12 +264,20 @@ const TopRightTwo = styled.div`
   .pic1 {
     height: 99%;
     width: 48%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 
   .pic2 {
     height: 99%;
     width: 50%;
     padding-left: 1%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -217,6 +289,10 @@ const MiddleRightTwo = styled.div`
   .pic3 {
     height: 99%;
     width: 99%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -228,6 +304,10 @@ const BottomRightTwo = styled.div`
   .pic3 {
     height: 99%;
     width: 99%;
+    :hover {
+      box-shadow: 1px 1px;
+      border-radius: 2px;
+    }
   }
 `;
 
@@ -238,48 +318,48 @@ const SectionTwo = () => {
       <MainContainer>
         <LeftOne>
           <TopLeftOne>
-            <img className="pic1" src={hero1} alt="sticky note" />
-            <img className="pic2" src={hero3} alt="sticky note" />
+            <img className="pic1" src={Chip} alt="sticky note" />
+            <img className="pic2" src={Palm} alt="sticky note" />
           </TopLeftOne>
           <MiddleLeftOne>
-            <img className="pic2" src={hero8} alt="sticky note" />
+            <img className="pic2" src={Flower} alt="sticky note" />
           </MiddleLeftOne>
           <BottomLeftOne>
-            <img className="pic3" src={hero7} alt="sticky note" />
+            <img className="pic3" src={Orange3} alt="sticky note" />
           </BottomLeftOne>
         </LeftOne>
         <LeftTwo>
           <TopLeftTwo>
-            <img className="pic1" src={hero1} alt="sticky note" />
+            <img className="pic1" src={Surf} alt="sticky note" />
           </TopLeftTwo>
           <MiddleLeftTwo>
-            <img className="pic1" src={hero4} alt="sticky note" />
-            <img className="pic2" src={hero9} alt="sticky note" />
+            <img className="pic1" src={Drums} alt="sticky note" />
+            <img className="pic2" src={Coffee} alt="sticky note" />
           </MiddleLeftTwo>
           <BottomLeftTwo>
-            <img className="pic1" src={hero10} alt="sticky note" />
-            <img className="pic2" src={hero2} alt="sticky note" />
+            <img className="pic1" src={Plant2} alt="sticky note" />
+            <img className="pic2" src={Dinner} alt="sticky note" />
           </BottomLeftTwo>
         </LeftTwo>
         <RightOne>
           <TopRightOne>
-            <img className="pic1" src={hero10} alt="sticky note" />
-            <img className="pic2" src={hero2} alt="sticky note" />
+            <img className="pic1" src={Coldbrew} alt="sticky note" />
+            <img className="pic2" src={Surfboards} alt="sticky note" />
           </TopRightOne>
           <BottomRightOne>
-            <img className="pic1" src={hero2} alt="sticky note" />
+            <img className="pic1" src={Surf2} alt="sticky note" />
           </BottomRightOne>
         </RightOne>
         <RightTwo>
           <TopRightTwo>
-            <img className="pic1" src={hero1} alt="sticky note" />
-            <img className="pic2" src={hero3} alt="sticky note" />
+            <img className="pic1" src={Dinner2} alt="sticky note" />
+            <img className="pic2" src={Pink} alt="sticky note" />
           </TopRightTwo>
           <MiddleRightTwo>
-            <img className="pic3" src={hero8} alt="sticky note" />
+            <img className="pic3" src={Sculpture} alt="sticky note" />
           </MiddleRightTwo>
           <BottomRightTwo>
-            <img className="pic3" src={hero7} alt="sticky note" />
+            <img className="pic3" src={Swamp} alt="sticky note" />
           </BottomRightTwo>
         </RightTwo>
       </MainContainer>
