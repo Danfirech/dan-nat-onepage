@@ -1,28 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import Chip from '../images/chip.jpg';
-import Coffee from '../images/coffee.jpg';
-import Coffee2 from '../images/coffee2.jpg';
-import Coldbrew from '../images/coldbrew.jpg';
-import Dinner from '../images/dinner.jpg';
-import Dinner2 from '../images/dinner2.jpg';
-import Drums from '../images/drums.jpg';
-import Flower from '../images/flower.jpg';
-import Gummy from '../images/gummy.jpg';
-import Orange from '../images/orange.jpg';
-import Orange2 from '../images/orange2.jpg';
-import Orange3 from '../images/orange3.jpg';
-import Palm from '../images/palm.jpg';
-import Pink from '../images/pink.jpg';
-import Pink2 from '../images/pink2.jpg';
-import Plant2 from '../images/plant2.jpg';
-import Rainbow from '../images/rainbow.jpg';
-import Room from '../images/room.jpg';
-import Sculpture from '../images/sculpture.jpg';
-import Surf from '../images/surf.jpg';
-import Surf2 from '../images/surf2.jpg';
-import Surfboards from '../images/surfboards.jpg';
-import Swamp from '../images/swamp.jpg';
+import React from "react";
+import styled from "styled-components";
+import Chip from "../images/chip.jpg";
+import Coffee from "../images/coffee.jpg";
+import Coffee2 from "../images/coffee2.jpg";
+import Coldbrew from "../images/coldbrew.jpg";
+import Dinner from "../images/dinner.jpg";
+import Dinner2 from "../images/dinner2.jpg";
+import Drums from "../images/drums.jpg";
+import Flower from "../images/flower.jpg";
+import Gummy from "../images/gummy.jpg";
+import Orange from "../images/orange.jpg";
+import Orange2 from "../images/orange2.jpg";
+import Orange3 from "../images/orange3.jpg";
+import Palm from "../images/palm.jpg";
+import Pink from "../images/pink.jpg";
+import Pink2 from "../images/pink2.jpg";
+import Plant2 from "../images/plant2.jpg";
+import Rainbow from "../images/rainbow.jpg";
+import Room from "../images/room.jpg";
+import Sculpture from "../images/sculpture.jpg";
+import Surf from "../images/surf.jpg";
+import Surf2 from "../images/surf2.jpg";
+import Surfboards from "../images/surfboards.jpg";
+import Swamp from "../images/swamp.jpg";
 
 const MainContainer = styled.div`
   height: 80vh;
@@ -147,6 +147,7 @@ const MiddleLeftTwo = styled.div`
   .pic1 {
     height: 99%;
     width: 48%;
+
     :hover {
       box-shadow: 1px 1px;
       border-radius: 2px;
