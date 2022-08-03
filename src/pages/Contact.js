@@ -21,7 +21,7 @@ const Top = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: white;
   margin-top: -10%;
 
   .font {
@@ -30,19 +30,14 @@ const Top = styled.div`
 `;
 
 const Bottom = styled.div`
-  height: 40vh;
+  height: 50vh;
   width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: center;
   align-items: center;
-  background-color: blue;
-
-  .form {
-    height: 80px;
-    width: 60px;
-  }
+  background-color: white;
 `;
 
 const Contact = () => {
@@ -58,7 +53,7 @@ const Contact = () => {
           </div>
         </Top>
         <Bottom>
-          <JotformEmbed src="https://form.jotform.com/220784862221152" />
+          <JotformEmbed src="https://form.jotform.com/222144101705137" />
         </Bottom>
       </Container>
     </div>
