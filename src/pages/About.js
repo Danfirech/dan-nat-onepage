@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import Logo from "../images/logo.png";
-import Header from "../components /Header";
-import Woman from "../images/woman.png";
-import Footer from "../components /Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Header from '../components /Header';
+import Dan from '../images/dan.png';
+import Nat from '../images/nat.png';
+import Footer from '../components /Footer';
 
 const Container = styled.div`
-  height: 89vh;
+  height: 150vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,8 @@ const TopLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: #e9e9e4;
+  font-size: 25px;
 `;
 
 const TopRight = styled.div`
@@ -35,11 +36,19 @@ const TopRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
 
-  .woman {
+  .dan {
     height: 100%;
     width: 100%;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🤷🏼‍♂️</text></svg>")
+        16 0,
+      auto;
+    :hover {
+      height: 97%;
+      width: 97%;
+      box-shadow: 6px 6px;
+      border-radius: 4px;
+    }
   }
 `;
 
@@ -55,11 +64,15 @@ const Middle = styled.div`
 const MiddleLeft = styled.div`
   height: 100%;
   width: 30%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: purple;
+  background-color: black;
+  color: white;
+  font-size: 25px;
 `;
 
 const MiddleMiddle = styled.div`
@@ -68,16 +81,19 @@ const MiddleMiddle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: pink;
+  background-color: white;
 `;
 
 const MiddleRight = styled.div`
   height: 100%;
   width: 32.2%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-color: #565552;
+  color: white;
+  font-size: 25px;
 `;
 
 // BOTTOM BOTTOM BOTTOM
@@ -97,9 +113,18 @@ const BottomLeft = styled.div`
   align-items: center;
   background-color: white;
 
-  .woman {
+  .nat {
     height: 100%;
     width: 100%;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>✨</text></svg>")
+        16 0,
+      auto;
+    :hover {
+      height: 97%;
+      width: 97%;
+      box-shadow: 6px 6px;
+      border-radius: 4px;
+    }
   }
 `;
 
@@ -109,7 +134,8 @@ const BottomRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: #d9d9d9;
+  font-size: 25px;
 `;
 
 const BioText = styled.div`
@@ -136,12 +162,12 @@ const MainText = styled.div`
 const About = () => {
   return (
     <div>
-      <Header></Header>
+      <Header />
       <Container>
         <Top>
           <TopLeft>
             <BioText>
-              <div className="margin">Natalie</div>
+              <div className="margin">Dan</div>
               <br></br>
               <div>
                 is simply dummy text of the printing and typesetting industry.
@@ -151,7 +177,7 @@ const About = () => {
             </BioText>
           </TopLeft>
           <TopRight>
-            <img className="woman" src={Woman} alt="sticky note" />
+            <img className="dan" src={Dan} alt="sticky note" />
           </TopRight>
         </Top>
         <Middle>
@@ -162,8 +188,6 @@ const About = () => {
             <div>U</div>
             <div>T</div>
             <br></br>
-            <div>U</div>
-            <div>S</div>
           </MiddleLeft>
           <MiddleMiddle>
             <MainText>
@@ -175,16 +199,17 @@ const About = () => {
             </MainText>
           </MiddleMiddle>
           <MiddleRight>
-            <div>Color</div>
+            <div>U</div>
+            <div>S</div>
           </MiddleRight>
         </Middle>
         <Bottom>
           <BottomLeft>
-            <img className="woman" src={Woman} alt="sticky note" />
+            <img className="nat" src={Nat} alt="sticky note" />
           </BottomLeft>
           <BottomRight>
             <BioText>
-              <div className="margin">Dan</div>
+              <div className="margin">Natalie</div>
               <br></br>
               <div>
                 is simply dummy text of the printing and typesetting industry.
@@ -194,8 +219,8 @@ const About = () => {
             </BioText>
           </BottomRight>
         </Bottom>
+        <Footer />
       </Container>
-      <Footer></Footer>
     </div>
   );
 };
