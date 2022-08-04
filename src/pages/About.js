@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Header from '../components /Header';
-import Dan from '../images/dan.png';
-import Nat from '../images/nat.png';
-import Footer from '../components /Footer';
+import React from "react";
+import styled from "styled-components";
+import Header from "../components /Header";
+import Dan from "../images/dan.png";
+import Nat from "../images/nat.png";
+import Footer from "../components /Footer";
 
 const Container = styled.div`
   height: 150vh;
@@ -15,14 +15,14 @@ const Container = styled.div`
 // TOP TOP TOP
 
 const Top = styled.div`
-  height: 33.3%;
+  height: 25%;
   width: 100%;
   display: flex;
 `;
 
 const TopLeft = styled.div`
   height: 100%;
-  width: 70%;
+  width: 77%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ const TopLeft = styled.div`
 
 const TopRight = styled.div`
   height: 100%;
-  width: 30%;
+  width: 23%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ const TopRight = styled.div`
 // MIDDLE MIDDLE MIDDLE
 
 const Middle = styled.div`
-  height: 33.3%;
+  height: 50%;
   width: 100%;
   background-color: blue;
   display: flex;
@@ -101,7 +101,7 @@ const MiddleRight = styled.div`
 // BOTTOM BOTTOM BOTTOM
 
 const Bottom = styled.div`
-  height: 33.3%;
+  height: 25%;
   width: 100%;
   background-color: yellow;
   display: flex;
@@ -109,7 +109,7 @@ const Bottom = styled.div`
 
 const BottomLeft = styled.div`
   height: 100%;
-  width: 30%;
+  width: 23%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +191,8 @@ const About = () => {
             <div>U</div>
             <div>T</div>
             <br></br>
+            <div>U</div>
+            <div>S</div>
           </MiddleLeft>
           <MiddleMiddle>
             <MainText>
@@ -199,10 +201,7 @@ const About = () => {
               the 1500s,
             </MainText>
           </MiddleMiddle>
-          <MiddleRight>
-            <div>U</div>
-            <div>S</div>
-          </MiddleRight>
+          <MiddleRight></MiddleRight>
         </Middle>
         <Bottom>
           <BottomLeft>

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Logo from '../images/logo.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const MainContainer = styled.div`
   height: 40vh;
@@ -39,6 +39,7 @@ const TopMiddle = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 44px;
 
   a {
     text-decoration: none;
@@ -56,6 +57,7 @@ const TopRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 28px;
 `;
 
 const Bottom = styled.div`
@@ -95,10 +97,10 @@ const SectionThree = () => {
         </Top>
         <Bottom>
           <div>2022 Dan&Nat Design</div>
-          <Link to="/privacypolicy" style={{ textDecoration: 'none' }}>
+          <Link to="/privacypolicy" style={{ textDecoration: "none" }}>
             <div className="btn">Privacy Policy</div>
           </Link>
-          <Link to="/termsAndConditions" style={{ textDecoration: 'none' }}>
+          <Link to="/termsAndConditions" style={{ textDecoration: "none" }}>
             <div className="btn">Terms and Conditions</div>
           </Link>
         </Bottom>

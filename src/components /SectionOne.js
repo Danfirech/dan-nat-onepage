@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Time from '../images/on-time.png';
-import Price from '../images/price.png';
-import Satisfaction from '../images/satisfaction.png';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Time from "../images/on-time.png";
+import Price from "../images/price.png";
+import Satisfaction from "../images/satisfaction.png";
 
 const MainContainer = styled.div`
   height: 100vh;
@@ -134,10 +134,10 @@ const SectionOne = () => {
       <MainContainer>
         <TreeSection>
           <div className="title slide-in-top">
-            Create and grow your website fast <br />
-            with Dan and Nat Design.
+            Clean Landing Page and Website <br />
+            Builds For Your Business
           </div>
-          <Link to="/contact" style={{ textDecoration: 'none' }}>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
             <button className="contact-btn slide-in-top pulsate-bck">
               Contact Us
             </button>
